@@ -2,6 +2,8 @@
 
 # **Starter2DStack**   
 
+![Agent2D Buid + Binary](https://github.com/KN2C2D/starter-stack/workflows/Agent2D%20Buid%20+%20Binary/badge.svg?branch=master&event=push)
+
 This project is based on **[HELIOS Base](https://osdn.net/projects/rctools/releases/)** ( **[StarterAgent2D](https://github.com/naderzare/StarterAgent2D)**  & **[StarterLibRCSC](https://github.com/naderzare/StarterLibRCSC)** by [Nader Zare](https://github.com/naderzare)) & Licensed under _GNU GPL 3_. 
 
 ## First time build
