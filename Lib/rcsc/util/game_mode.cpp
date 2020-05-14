@@ -161,6 +161,11 @@ MapHolder::MapHolder()
     M_playmode_map["penalty_winner_l"] = std::make_pair( GameMode::TimeOver, NEUTRAL );//std::make_pair(PenaltyWinner_, LEFT);
     M_playmode_map["penalty_winner_r"] = std::make_pair( GameMode::TimeOver, NEUTRAL );//std::make_pair(PenaltyWinner_, RIGHT);
     M_playmode_map["penalty_draw"] = std::make_pair( GameMode::TimeOver, NEUTRAL );//std::make_pair(PenaltyDraw, NEUTRAL);
+
+    // IllegalDefense_
+    M_playmode_map["illegal_defense_r"] = std::make_pair( GameMode::IllegalDefense_, LEFT );
+    M_playmode_map["illegal_defense_l"] = std::make_pair( GameMode::IllegalDefense_, RIGHT );
+
 }
 
 } // end of no name namespace
@@ -279,6 +284,7 @@ GameMode::isServerCycleStoppedMode() const
     case FreeKickFault_:
     case BackPass_:
     case CatchFault_:
+    case IllegalDefense_:
         return true;
     default:
         return false;
@@ -461,6 +467,10 @@ GameMode::getServerPlayMode() const
         return ( side() == LEFT
                  ? PM_PenaltyScore_Left
                  : PM_PenaltyScore_Right );
+    case IllegalDefense_:
+        return ( side() == LEFT
+                 ? PM_IllegalDefense_Left
+                 : PM_IllegalDefense_Right);
     default:
         return PM_MAX;
     };

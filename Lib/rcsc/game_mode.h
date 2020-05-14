@@ -94,7 +94,10 @@ public:
 
         GoalieCatch_, // Left | Right
         ExtendHalf,
-        MODE_MAX
+        MODE_MAX,
+
+
+        IllegalDefense_, // Left | Right
     };
 
 
@@ -173,6 +176,10 @@ public:
 
     "yellow_card_SIDE_UNUM"
     "red_card_SIDE_UNUM"
+
+    // IllegalDefense
+    "illegal_defense_{l|r}"
+
     */
 
     typedef std::pair< Type, rcsc::SideID > Pair; //!< alias of the pair of playmode type and side type
