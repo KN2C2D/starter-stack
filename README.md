@@ -17,7 +17,7 @@ This project is based on **[HELIOS Base](https://osdn.net/projects/rctools/relea
 2. Clone this repository.
 
    ```bash
-    git clone git@github.com:KN2C2D/starter2d-stack.git && cd starter2d-stack
+    git clone git@github.com:KN2C2D/starter-stack.git && cd starter2d-stack
    ```
 
 3. Then build agent & lib with included script:
